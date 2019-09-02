@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ysxsoft.utest">
+
+    <application
+        android:name=".BApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:appComponentFactory="compont"
+        tools:replace="android:appComponentFactory">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ysxsoft.utest.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--启动页-->
+        <activity
+            android:name="com.ysxsoft.common_base.ui.welcome.SplashActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--首页-->
+        <activity android:name=".MainActivity"></activity>
+        <!--测试页面-->
+        <activity android:name=".ui.activity.TestActivity"></activity>
+        <!--登录-->
+        <activity android:name=".ui.activity.LoginActivity"></activity>
+        <!--注册-->
+        <activity android:name=".ui.activity.RegActivity"></activity>
+        <!--忘记密码-->
+        <activity android:name=".ui.activity.ForgetActivity"></activity>
+        <!--关于我们-->
+        <activity android:name=".ui.activity.AboutMeActivity"></activity>
+        <!--测试页面1-->
+        <activity android:name=".ui.activity.Test1Activity"></activity>
+        <!--测试页面2-->
+        <activity android:name=".ui.activity.Test2Activity"></activity>
+        <!--测试页面3-->
+        <activity android:name=".ui.activity.Test3Activity"></activity>
+        <!--测试页面4-->
+        <activity android:name=".ui.activity.Test4Activity"></activity>
+        <!--测试页面5-->
+        <activity android:name=".ui.activity.Test5Activity"></activity>
+        <!--测试页面6-->
+        <activity android:name=".ui.activity.Test6Activity"></activity>
+        <!--测试页面7-->
+        <activity android:name=".ui.activity.Test7Activity"></activity>
+        <!--测试页面8-->
+        <activity android:name=".ui.activity.Test8Activity"></activity>
+        <!--测试页面9-->
+        <activity android:name=".ui.activity.Test9Activity"></activity>
+        <!--测试页面10-->
+        <activity android:name=".ui.activity.Test10Activity"></activity>
+        <!--测试页面11-->
+        <activity android:name=".ui.activity.Test11Activity"></activity>
+        <!--测试页面12-->
+        <activity android:name=".ui.activity.Test12Activity"></activity>
+        <!--测试页面13-->
+        <activity android:name=".ui.activity.Test13Activity"></activity>
+        <!--测试页面14-->
+        <activity android:name=".ui.activity.Test14Activity"></activity>
+        <!--测试页面15-->
+        <activity android:name=".ui.activity.Test15Activity"></activity>
+        <!--测试页面16-->
+        <activity android:name=".ui.activity.Test16Activity"></activity>
+        <!--测试页面17-->
+        <activity android:name=".ui.activity.Test17Activity"></activity>
+        <!--测试页面18-->
+        <activity android:name=".ui.activity.Test18Activity"></activity>
+        <!--测试页面19-->
+        <activity android:name=".ui.activity.Test19Activity"></activity>
+        <!--测试页面20-->
+        <activity android:name=".ui.activity.Test20Activity"></activity>
+        <!--测试页面21-->
+        <activity android:name=".ui.activity.Test21Activity"></activity>
+        <!--测试页面22-->
+        <activity android:name=".ui.activity.Test22Activity"></activity>
+        <!--测试页面23-->
+        <activity android:name=".ui.activity.Test23Activity"></activity>
+        <!--测试页面24-->
+        <activity android:name=".ui.activity.Test24Activity"></activity>
+        <!--测试页面25-->
+        <activity android:name=".ui.activity.Test25Activity"></activity>
+        <!--测试页面26-->
+        <activity android:name=".ui.activity.Test26Activity"></activity>
+        <!--测试页面27-->
+        <activity android:name=".ui.activity.Test27Activity"></activity>
+        <!--测试页面28-->
+        <activity android:name=".ui.activity.Test28Activity"></activity>
+        <!--测试页面29-->
+        <activity android:name=".ui.activity.Test29Activity"></activity>
+        <!--测试页面30-->
+        <activity android:name=".ui.activity.Test30Activity"></activity>
+        <!--测试页面31-->
+        <activity android:name=".ui.activity.Test31Activity"></activity>
+        <!--测试页面32-->
+        <activity android:name=".ui.activity.Test32Activity"></activity>
+        <!--测试页面33-->
+        <activity android:name=".ui.activity.Test33Activity"></activity>
+        <!--测试页面34-->
+        <activity android:name=".ui.activity.Test34Activity"></activity>
+        <!--测试页面35-->
+        <activity android:name=".ui.activity.Test35Activity"></activity>
+        <!--测试页面36-->
+        <activity android:name=".ui.activity.Test36Activity"></activity>
+        <!--测试页面37-->
+        <activity android:name=".ui.activity.Test37Activity"></activity>
+        <!--测试页面38-->
+        <activity android:name=".ui.activity.Test38Activity"></activity>
+        <!--测试页面39-->
+        <activity android:name=".ui.activity.Test39Activity"></activity>
+        <!--测试页面40-->
+        <activity android:name=".ui.activity.Test40Activity"></activity>
+        <!--测试页面41-->
+        <activity android:name=".ui.activity.Test41Activity"></activity>
+        <!--测试页面42-->
+        <activity android:name=".ui.activity.Test42Activity"></activity>
+        <!--测试页面43-->
+        <activity android:name=".ui.activity.Test43Activity"></activity>
+        <!--测试页面44-->
+        <activity android:name=".ui.activity.Test44Activity"></activity>
+        <!--测试页面45-->
+        <activity android:name=".ui.activity.Test45Activity"></activity>
+        <!--测试页面46-->
+        <activity android:name=".ui.activity.Test46Activity"></activity>
+        <!--测试页面47-->
+        <activity android:name=".ui.activity.Test47Activity"></activity>
+        <!--测试页面48-->
+        <activity android:name=".ui.activity.Test48Activity"></activity>
+        <!--测试页面49-->
+        <activity android:name=".ui.activity.Test49Activity"></activity>
+        <!--测试页面50-->
+        <activity android:name=".ui.activity.Test50Activity"></activity>
+        <!--测试页面51-->
+        <activity android:name=".ui.activity.Test51Activity"></activity>
+        <!--测试页面52-->
+        <activity android:name=".ui.activity.Test52Activity"></activity>
+        <!--测试页面53-->
+        <activity android:name=".ui.activity.Test53Activity"></activity>
+        <!--测试页面54-->
+        <activity android:name=".ui.activity.Test54Activity"></activity>
+        <!--测试页面55-->
+        <activity android:name=".ui.activity.Test55Activity"></activity>
+        <!--测试页面56-->
+        <activity android:name=".ui.activity.Test56Activity"></activity>
+        <!--测试页面57-->
+        <activity android:name=".ui.activity.Test57Activity"></activity>
+        <!--测试页面58-->
+        <activity android:name=".ui.activity.Test58Activity"></activity>
+        <!--测试页面59-->
+        <activity android:name=".ui.activity.Test59Activity"></activity>
+        <!--测试页面60-->
+        <activity android:name=".ui.activity.Test60Activity"></activity>
+        <!--测试页面61-->
+        <activity android:name=".ui.activity.Test61Activity"></activity>
+        <!--测试页面62-->
+        <activity android:name=".ui.activity.Test62Activity"></activity>
+        <!--测试页面63-->
+        <activity android:name=".ui.activity.Test63Activity"></activity>
+        <!--测试页面64-->
+        <activity android:name=".ui.activity.Test64Activity"></activity>
+        <!--测试页面65-->
+        <activity android:name=".ui.activity.Test65Activity"></activity>
+        <!--测试页面66-->
+        <activity android:name=".ui.activity.Test66Activity"></activity>
+        <!--测试页面67-->
+        <activity android:name=".ui.activity.Test67Activity"></activity>
+        <!--测试页面68-->
+        <activity android:name=".ui.activity.Test68Activity"></activity>
+        <!--测试页面69-->
+        <activity android:name=".ui.activity.Test69Activity"></activity>
+        <!--测试页面70-->
+        <activity android:name=".ui.activity.Test70Activity"></activity>
+        <!--测试页面71-->
+        <activity android:name=".ui.activity.Test71Activity"></activity>
+        <!--测试页面72-->
+        <activity android:name=".ui.activity.Test72Activity"></activity>
+        <!--测试页面73-->
+        <activity android:name=".ui.activity.Test73Activity"></activity>
+        <!--测试页面74-->
+        <activity android:name=".ui.activity.Test74Activity"></activity>
+        <!--测试页面75-->
+        <activity android:name=".ui.activity.Test75Activity"></activity>
+        <!--测试页面76-->
+        <activity android:name=".ui.activity.Test76Activity"></activity>
+        <!--测试页面77-->
+        <activity android:name=".ui.activity.Test77Activity"></activity>
+        <!--测试页面78-->
+        <activity android:name=".ui.activity.Test78Activity"></activity>
+        <!--测试页面79-->
+        <activity android:name=".ui.activity.Test79Activity"></activity>
+        <!--测试页面80-->
+        <activity android:name=".ui.activity.Test80Activity"></activity>
+        <!--测试页面81-->
+        <activity android:name=".ui.activity.Test81Activity"></activity>
+        <!--测试页面82-->
+        <activity android:name=".ui.activity.Test82Activity"></activity>
+        <!--测试页面83-->
+        <activity android:name=".ui.activity.Test83Activity"></activity>
+        <!--测试页面84-->
+        <activity android:name=".ui.activity.Test84Activity"></activity>
+        <!--测试页面85-->
+        <activity android:name=".ui.activity.Test85Activity"></activity>
+        <!--测试页面86-->
+        <activity android:name=".ui.activity.Test86Activity"></activity>
+        <!--测试页面87-->
+        <activity android:name=".ui.activity.Test87Activity"></activity>
+        <!--测试页面88-->
+        <activity android:name=".ui.activity.Test88Activity"></activity>
+        <!--测试页面89-->
+        <activity android:name=".ui.activity.Test89Activity"></activity>
+        <!--测试页面90-->
+        <activity android:name=".ui.activity.Test90Activity"></activity>
+        <!--测试页面91-->
+        <activity android:name=".ui.activity.Test91Activity"></activity>
+        <!--测试页面92-->
+        <activity android:name=".ui.activity.Test92Activity"></activity>
+        <!--测试页面93-->
+        <activity android:name=".ui.activity.Test93Activity"></activity>
+        <!--测试页面94-->
+        <activity android:name=".ui.activity.Test94Activity"></activity>
+        <!--测试页面95-->
+        <activity android:name=".ui.activity.Test95Activity"></activity>
+        <!--测试页面96-->
+        <activity android:name=".ui.activity.Test96Activity"></activity>
+        <!--测试页面97-->
+        <activity android:name=".ui.activity.Test97Activity"></activity>
+        <!--测试页面98-->
+        <activity android:name=".ui.activity.Test98Activity"></activity>
+        <!--测试页面99-->
+        <activity android:name=".ui.activity.Test99Activity"></activity>
+        <!--测试页面100-->
+        <activity android:name=".ui.activity.Test100Activity"></activity>
+        <!--测试页面101-->
+        <activity android:name=".ui.activity.Test101Activity"></activity>
+        <!--测试页面102-->
+        <activity android:name=".ui.activity.Test102Activity"></activity>
+        <!--测试页面103-->
+        <activity android:name=".ui.activity.Test103Activity"></activity>
+        <!--测试页面104-->
+        <activity android:name=".ui.activity.Test104Activity"></activity>
+        <!--测试页面105-->
+        <activity android:name=".ui.activity.Test105Activity"></activity>
+        <!--测试页面106-->
+        <activity android:name=".ui.activity.Test106Activity"></activity>
+        <!--测试页面107-->
+        <activity android:name=".ui.activity.Test107Activity"></activity>
+        <!--测试页面108-->
+        <activity android:name=".ui.activity.Test108Activity"></activity>
+        <!--测试页面109-->
+        <activity android:name=".ui.activity.Test109Activity"></activity>
+        <!--测试页面110-->
+        <activity android:name=".ui.activity.Test110Activity"></activity>
+        <!--测试页面111-->
+        <activity android:name=".ui.activity.Test111Activity"></activity>
+        <!--测试页面112-->
+        <activity android:name=".ui.activity.Test112Activity"></activity>
+        <!--测试页面113-->
+        <activity android:name=".ui.activity.Test113Activity"></activity>
+        <!--测试页面114-->
+        <activity android:name=".ui.activity.Test114Activity"></activity>
+        <!--测试页面115-->
+        <activity android:name=".ui.activity.Test115Activity"></activity>
+        <!--测试页面116-->
+        <activity android:name=".ui.activity.Test116Activity"></activity>
+        <!--测试页面117-->
+        <activity android:name=".ui.activity.Test117Activity"></activity>
+        <!--测试页面118-->
+        <activity android:name=".ui.activity.Test118Activity"></activity>
+        <!--测试页面119-->
+        <activity android:name=".ui.activity.Test119Activity"></activity>
+        <!--测试页面120-->
+        <activity android:name=".ui.activity.Test120Activity"></activity>
+        <!--测试页面121-->
+        <activity android:name=".ui.activity.Test121Activity"></activity>
+        <!--测试页面122-->
+        <activity android:name=".ui.activity.Test122Activity"></activity>
+        <!--测试页面123-->
+        <activity android:name=".ui.activity.Test123Activity"></activity>
+        <!--测试页面124-->
+        <activity android:name=".ui.activity.Test124Activity"></activity>
+        <!--测试页面125-->
+        <activity android:name=".ui.activity.Test125Activity"></activity>
+        <!--测试页面126-->
+        <activity android:name=".ui.activity.Test126Activity"></activity>
+        <!--测试页面127-->
+        <activity android:name=".ui.activity.Test127Activity"></activity>
+        <!--测试页面128-->
+        <activity android:name=".ui.activity.Test128Activity"></activity>
+        <!--测试页面129-->
+        <activity android:name=".ui.activity.Test129Activity"></activity>
+        <!--测试页面130-->
+        <activity android:name=".ui.activity.Test130Activity"></activity>
+        <!--测试页面131-->
+        <activity android:name=".ui.activity.Test131Activity"></activity>
+        <!--测试页面132-->
+        <activity android:name=".ui.activity.Test132Activity"></activity>
+        <!--测试页面133-->
+        <activity android:name=".ui.activity.Test133Activity"></activity>
+        <!--测试页面134-->
+        <activity android:name=".ui.activity.Test134Activity"></activity>
+        <!--测试页面135-->
+        <activity android:name=".ui.activity.Test135Activity"></activity>
+        <!--测试页面136-->
+        <activity android:name=".ui.activity.Test136Activity"></activity>
+        <!--测试页面137-->
+        <activity android:name=".ui.activity.Test137Activity"></activity>
+        <!--测试页面138-->
+        <activity android:name=".ui.activity.Test138Activity"></activity>
+        <!--测试页面139-->
+        <activity android:name=".ui.activity.Test139Activity"></activity>
+        <!--测试页面140-->
+        <activity android:name=".ui.activity.Test140Activity"></activity>
+        <!--测试页面141-->
+        <activity android:name=".ui.activity.Test141Activity"></activity>
+        <!--测试页面142-->
+        <activity android:name=".ui.activity.Test142Activity"></activity>
+        <!--测试页面143-->
+        <activity android:name=".ui.activity.Test143Activity"></activity>
+        <!--测试页面144-->
+        <activity android:name=".ui.activity.Test144Activity"></activity>
+        <!--测试页面145-->
+        <activity android:name=".ui.activity.Test145Activity"></activity>
+        <!--测试页面146-->
+        <activity android:name=".ui.activity.Test146Activity"></activity>
+        <!--测试页面147-->
+        <activity android:name=".ui.activity.Test147Activity"></activity>
+        <!--测试页面148-->
+        <activity android:name=".ui.activity.Test148Activity"></activity>
+        <!--测试页面149-->
+        <activity android:name=".ui.activity.Test149Activity"></activity>
+        <!--测试页面150-->
+        <activity android:name=".ui.activity.Test150Activity"></activity>
+        <!--测试页面151-->
+        <activity android:name=".ui.activity.Test151Activity"></activity>
+        <!--测试页面152-->
+        <activity android:name=".ui.activity.Test152Activity"></activity>
+        <!--测试页面153-->
+        <activity android:name=".ui.activity.Test153Activity"></activity>
+        <!--测试页面154-->
+        <activity android:name=".ui.activity.Test154Activity"></activity>
+        <!--测试页面155-->
+        <activity android:name=".ui.activity.Test155Activity"></activity>
+        <!--测试页面156-->
+        <activity android:name=".ui.activity.Test156Activity"></activity>
+        <!--测试页面157-->
+        <activity android:name=".ui.activity.Test157Activity"></activity>
+        <!--测试页面158-->
+        <activity android:name=".ui.activity.Test158Activity"></activity>
+        <!--测试页面159-->
+        <activity android:name=".ui.activity.Test159Activity"></activity>
+        <!--测试页面160-->
+        <activity android:name=".ui.activity.Test160Activity"></activity>
+        <!--测试页面161-->
+        <activity android:name=".ui.activity.Test161Activity"></activity>
+        <!--测试页面162-->
+        <activity android:name=".ui.activity.Test162Activity"></activity>
+        <!--测试页面163-->
+        <activity android:name=".ui.activity.Test163Activity"></activity>
+        <!--测试页面164-->
+        <activity android:name=".ui.activity.Test164Activity"></activity>
+        <!--测试页面165-->
+        <activity android:name=".ui.activity.Test165Activity"></activity>
+        <!--测试页面166-->
+        <activity android:name=".ui.activity.Test166Activity"></activity>
+        <!--测试页面167-->
+        <activity android:name=".ui.activity.Test167Activity"></activity>
+        <!--测试页面168-->
+        <activity android:name=".ui.activity.Test168Activity"></activity>
+        <!--测试页面169-->
+        <activity android:name=".ui.activity.Test169Activity"></activity>
+        <!--测试页面170-->
+        <activity android:name=".ui.activity.Test170Activity"></activity>
+        <!--测试页面171-->
+        <activity android:name=".ui.activity.Test171Activity"></activity>
+        <!--测试页面172-->
+        <activity android:name=".ui.activity.Test172Activity"></activity>
+        <!--测试页面173-->
+        <activity android:name=".ui.activity.Test173Activity"></activity>
+        <!--测试页面174-->
+        <activity android:name=".ui.activity.Test174Activity"></activity>
+        <!--测试页面175-->
+        <activity android:name=".ui.activity.Test175Activity"></activity>
+        <!--测试页面176-->
+        <activity android:name=".ui.activity.Test176Activity"></activity>
+        <!--测试页面177-->
+        <activity android:name=".ui.activity.Test177Activity"></activity>
+        <!--测试页面178-->
+        <activity android:name=".ui.activity.Test178Activity"></activity>
+        <!--测试页面179-->
+        <activity android:name=".ui.activity.Test179Activity"></activity>
+        <!--测试页面180-->
+        <activity android:name=".ui.activity.Test180Activity"></activity>
+        <!--测试页面181-->
+        <activity android:name=".ui.activity.Test181Activity"></activity>
+        <!--测试页面182-->
+        <activity android:name=".ui.activity.Test182Activity"></activity>
+        <!--测试页面183-->
+        <activity android:name=".ui.activity.Test183Activity"></activity>
+        <!--测试页面184-->
+        <activity android:name=".ui.activity.Test184Activity"></activity>
+        <!--测试页面185-->
+        <activity android:name=".ui.activity.Test185Activity"></activity>
+        <!--测试页面186-->
+        <activity android:name=".ui.activity.Test186Activity"></activity>
+        <!--测试页面187-->
+        <activity android:name=".ui.activity.Test187Activity"></activity>
+        <!--测试页面188-->
+        <activity android:name=".ui.activity.Test188Activity"></activity>
+        <!--测试页面189-->
+        <activity android:name=".ui.activity.Test189Activity"></activity>
+        <!--测试页面190-->
+        <activity android:name=".ui.activity.Test190Activity"></activity>
+        <!--测试页面191-->
+        <activity android:name=".ui.activity.Test191Activity"></activity>
+        <!--测试页面192-->
+        <activity android:name=".ui.activity.Test192Activity"></activity>
+        <!--测试页面193-->
+        <activity android:name=".ui.activity.Test193Activity"></activity>
+        <!--测试页面194-->
+        <activity android:name=".ui.activity.Test194Activity"></activity>
+        <!--测试页面195-->
+        <activity android:name=".ui.activity.Test195Activity"></activity>
+        <!--测试页面196-->
+        <activity android:name=".ui.activity.Test196Activity"></activity>
+        <!--测试页面197-->
+        <activity android:name=".ui.activity.Test197Activity"></activity>
+        <!--测试页面198-->
+        <activity android:name=".ui.activity.Test198Activity"></activity>
+        <!--测试页面199-->
+        <activity android:name=".ui.activity.Test199Activity"></activity>
+        <!--测试页面200-->
+        <activity android:name=".ui.activity.Test200Activity"></activity>
+        <!--测试页面13-->
+        <activity android:name=".ui.activity.AddressActivity"></activity>
+        <!--web1页面-->
+        <activity android:name=".ui.activity.Web1Activity"></activity>
+        <!--列表2页面-->
+        <activity android:name=".ui.activity.List2Activity"></activity>
+    </application>
+</manifest>
